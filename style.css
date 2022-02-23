@@ -1,0 +1,57 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background-image: url(./img/wallpaper-pc10.jpg);
+}
+
+ul{
+    position: relative;
+    list-style: none;
+    top: 100px;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav{
+    background-color: rgba(16, 16, 16, .5);
+    width: 350px;
+    height: 100vh;
+    left: -350px;
+    position: absolute;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+a{
+    text-decoration: none;
+    display: block;
+    padding: 20px 5px;
+    padding-left: 32px;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(176, 224, 230);
+    color: black;
+    transition: 0.4s;
+}
+
+label{
+    padding: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
